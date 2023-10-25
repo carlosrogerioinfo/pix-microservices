@@ -3,7 +3,7 @@ using FluentValidator;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Pix.Microservices.Domain.Model;
+using Core.Repository.Domain.Model;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Transactions;
 using Pix.Core.Lib.Commands;

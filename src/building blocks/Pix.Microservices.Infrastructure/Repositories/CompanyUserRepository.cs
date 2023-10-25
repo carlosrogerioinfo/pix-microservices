@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pix.Microservices.Domain.Entities;
-using Pix.Microservices.Domain.Extention;
-using Pix.Microservices.Domain.Model;
+using Core.Repository.Domain.Extention;
+using Core.Repository.Domain.Model;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Contexts;
-using Pix.Microservices.Infrastructure.Repositories.Base;
+using Core.Repository.Infrastructure.Repository.Base;
+using Core.Repository.Domain.Extention;
 
 namespace Pix.Microservices.Infrastructure.Repositories
 {

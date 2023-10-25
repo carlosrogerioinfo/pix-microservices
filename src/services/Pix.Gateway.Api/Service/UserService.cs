@@ -2,7 +2,7 @@
 using Pix.Core.Lib.Gateway;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Pix.Microservices.Domain.Model;
+using Core.Repository.Domain.Model;
 
 namespace Pix.Gateway.Api.Service
 {

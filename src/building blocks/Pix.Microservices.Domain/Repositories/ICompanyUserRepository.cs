@@ -1,6 +1,6 @@
-﻿using Pix.Microservices.Domain.Entities;
-using Pix.Microservices.Domain.Model;
-using Pix.Microservices.Domain.Repositories.Base;
+﻿using Core.Repository.Domain.Model;
+using Core.Repository.Domain.Repository.Base;
+using Pix.Microservices.Domain.Entities;
 
 namespace Pix.Microservices.Domain.Repositories
 {

@@ -42,6 +42,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Reference Include="Core.Repository.Base">
+	    <HintPath>..\..\building blocks dlls\Core.Repository.Base.dll</HintPath>
+	  </Reference>
 	  <Reference Include="Pix.Core.Lib">
 	    <HintPath>..\..\building blocks dlls\Pix.Core.Lib.dll</HintPath>
 	  </Reference>
