@@ -12,19 +12,19 @@ namespace Pix.Gateway.Api.Configurations
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Gateway API PIX7 - Backoffice Api",
-                    Description = "Gateway API Backoffice Projeto PIX7",
+                    Title = "Pix Microservices Backend - Gateway Api",
+                    Description = "Gateway Api do projeto Pix Microservices Backend | Realizando ajustes...",
                     Version = "v1",
                     Contact = new OpenApiContact
                     {
-                        Name = "7Comm Consultoria",
-                        Email = "desenvolvimento@7comm.com.br",
-                        Url = new Uri("https://desenvolvimento@7comm.com.br")
+                        Name = "Pix Microservices Gateway",
+                        Email = "carlosrogerio.info@gmail.com",
+                        Url = new Uri("https://github.com/carlosrogerioinfo/pix-microservices")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Licença de uso: PIX7 - Backoffice Api",
-                        Url = new Uri("https://7comm.com.br/api-licenca")
+                        Name = "Licença de uso: Pix Microservices Backend",
+                        Url = new Uri("https://github.com/carlosrogerioinfo/pix-microservices")
                     }
                 });
 

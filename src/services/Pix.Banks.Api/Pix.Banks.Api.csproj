@@ -20,6 +20,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Properties\PublishProfiles\**" />
+	  <Content Remove="Properties\PublishProfiles\**" />
+	  <EmbeddedResource Remove="Properties\PublishProfiles\**" />
+	  <None Remove="Properties\PublishProfiles\**" />
+	  <_WebToolingArtifacts Remove="Properties\PublishProfiles\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Remove="Controllers\AuthenticationController.cs" />
 	</ItemGroup>
 
@@ -31,10 +39,6 @@
 		<ProjectReference Include="..\..\building blocks\Pix.Microservices.Core\Pix.Microservices.Core.csproj" />
 		<ProjectReference Include="..\..\building blocks\Pix.Microservices.Domain\Pix.Microservices.Domain.csproj" />
 		<ProjectReference Include="..\..\building blocks\Pix.Microservices.Infrastructure\Pix.Microservices.Infrastructure.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Properties\PublishProfiles\" />
 	</ItemGroup>
 
 	<ItemGroup>

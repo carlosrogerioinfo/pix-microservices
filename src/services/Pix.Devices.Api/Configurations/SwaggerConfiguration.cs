@@ -18,13 +18,13 @@ namespace Pix.Devices.Api.Configurations
                     Contact = new OpenApiContact
                     {
                         Name = "Pix Microservices",
-                        Email = "contato@pixmicroservices.com",
-                        Url = new Uri("https://pixmicroservices.com")
+                        Email = "carlosrogerio.info@gmail.com",
+                        Url = new Uri("https://github.com/carlosrogerioinfo/pix-microservices")
                     },
                     License = new OpenApiLicense
                     {
                         Name = "Licença de uso: Pix Microservices Backend",
-                        Url = new Uri("https://pixmicroservices.com/licence")
+                        Url = new Uri("https://github.com/carlosrogerioinfo/pix-microservices")
                     }
                 });
 
