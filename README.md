@@ -6,8 +6,8 @@ O projeto **Pix Microservices Backend** é um exemplo de estrutura de **aplicaç
 
 Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** e **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
 
-- [ ] Filtros dinâmicos (Todos os endpoints tem possibilidade de realizar filtragem dinâmica por qualquer campo da entidade).
-- [ ] Paginação (Em todos os endpoints, se não for especificado page e pageSize, por padrão ele define page = 1 e pageSize = 10).
+- [ ] Filtros dinâmicos (Realiza filtragem dinâmica por qualquer campo da entidade).
+- [ ] Paginação (Se não for especificado page e pageSize, por padrão ele define page = 1 e pageSize = 10).
 - [ ] Duas opções de conexão a banco de dados (**SQL Server** e **PostgreSQL**)
 - [ ] Repositório genérico avançado (Para maximizar a produtividade)
 - [ ] Autenticação via JWT Token
@@ -18,7 +18,8 @@ Este modelo de projeto está compatível e pronto para ser conectado com dois ti
 
 
 ## Arquitetura
-![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/bd8c0670-81ea-49ad-8cd7-29652224de2a)
+![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/3bfd2d72-7e12-41b1-a819-7b9e19aa9a1c)
+
 
 
 ## Configurações iniciais
@@ -115,11 +116,12 @@ Add-Migration start-database
 Update-Database
 ```
 
-![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/e26fba4f-f129-4772-9957-0d48cae62f12)
+![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/d4cc44fa-440c-4cc1-99fd-4e6a931a779b)
+
 
 Lembre-se de descomentar a opção do banco de dados para realizar a migration no método **OnConfiguring** no **PixDataContext**, conforme já mencionado acima na seção de configurações iniciais. Depois de executar sua migration, comente novamente a string de conexão, para que ela não sobrescreva a string de conexão que está no appsettings.
 
-![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/6604321e-35bc-4ef9-8758-fd6ee5ae8954)
+![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/46a50212-1dfc-488b-a64f-2f247568b817)
 
 
 ## Hospedagem gratuita (Asp.Net Core / SQL Server)
@@ -135,6 +137,7 @@ E-mail: carlosrogerio.info@gmail.com <br/>
 
 ## Arquitetura
 
-![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/bd8c0670-81ea-49ad-8cd7-29652224de2a)
+![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/77f55823-a70c-4b9b-99a0-5a60dc717d87)
 
-![image_b](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/8fb12b56-f037-475f-9add-f51ebc875ef0)
+![image_b](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/b6005ed6-4d76-489f-9869-ea142279523d)
+
