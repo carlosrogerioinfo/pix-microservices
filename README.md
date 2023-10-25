@@ -115,6 +115,11 @@ Add-Migration start-database
 Update-Database
 ```
 
+Use o comando abaixo caso deseje gerar um **script de banco de dados** ao invés de criar ou aplicar as alterações diretamente no banco de dados
+```
+Script-Migration
+```
+
 ![image_c](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/29fa936e-ce49-4a1d-8a28-96ee96032f7c)
 
 
