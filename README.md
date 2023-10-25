@@ -6,8 +6,8 @@ O projeto **Pix Microservices Backend** é um exemplo de estrutura de **aplicaç
 
 Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** e **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
 
-- [ ] Filtros dinâmicos (Realiza filtragem dinâmica por qualquer campo da entidade).
 - [ ] Paginação (Se não for especificado page e pageSize, por padrão ele define page = 1 e pageSize = 10).
+- [ ] Filtros dinâmicos (Realiza filtragem dinâmica por qualquer campo da entidade).
 - [ ] Duas opções de conexão a banco de dados (**SQL Server** e **PostgreSQL**)
 - [ ] Repositório genérico avançado (Para maximizar a produtividade)
 - [ ] Autenticação via JWT Token
