@@ -36,6 +36,9 @@ namespace Pix.Microservices.Domain.Http.Request
     public class BankTransactionFilter : ICustomQueryable
     {
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+        public Guid? Id { get; set; }
+
+        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public Guid? UserId { get; set; }
 
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]

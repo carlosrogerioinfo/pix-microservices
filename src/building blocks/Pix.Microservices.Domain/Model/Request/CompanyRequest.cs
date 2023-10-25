@@ -25,18 +25,25 @@ namespace Pix.Microservices.Domain.Http.Request
     {
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public Guid? Id { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string CompanyName { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string TradingName { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string Cnpj { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string Email { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string PhoneNumber { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string Contact { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public bool? Active { get; set; }
 

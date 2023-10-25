@@ -26,16 +26,24 @@ namespace Pix.Microservices.Domain.Http.Request
 
     public class BankAccountFilter : ICustomQueryable
     {
+        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+        public Guid? Id { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string AccountNumber { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Agency { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)] 
         public AccountType? AccountType { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)] 
         public bool? Active { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? BankId { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? CompanyId { get; set; }
     }

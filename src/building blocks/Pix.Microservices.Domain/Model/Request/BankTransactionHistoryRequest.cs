@@ -20,12 +20,18 @@ namespace Pix.Microservices.Domain.Http.Request
 
     public class BankTransactionHistoryFilter : ICustomQueryable
     {
+        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+        public Guid? Id { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Status { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Request { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Response { get; set; }
+        
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? BankTransactionId { get; set; }
     }

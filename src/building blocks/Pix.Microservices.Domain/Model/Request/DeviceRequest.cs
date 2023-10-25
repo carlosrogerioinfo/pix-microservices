@@ -26,16 +26,22 @@ namespace Pix.Microservices.Domain.Http.Request
     {
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? Id { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Name { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Platform { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string PlatformVersion { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string Model { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public string PhoneNumber { get; set; }
+
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? CompanyId { get; set; }
     }
