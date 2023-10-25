@@ -18,8 +18,7 @@ Este modelo de projeto está compatível e pronto para ser conectado com dois ti
 
 
 ## Arquitetura
-![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/3bfd2d72-7e12-41b1-a819-7b9e19aa9a1c)
-
+![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/ba4b790f-cf8f-4911-8aa8-a3baf829dca1)
 
 
 ## Configurações iniciais
@@ -116,12 +115,12 @@ Add-Migration start-database
 Update-Database
 ```
 
-![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/d4cc44fa-440c-4cc1-99fd-4e6a931a779b)
+![image_c](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/29fa936e-ce49-4a1d-8a28-96ee96032f7c)
 
 
 Lembre-se de descomentar a opção do banco de dados para realizar a migration no método **OnConfiguring** no **PixDataContext**, conforme já mencionado acima na seção de configurações iniciais. Depois de executar sua migration, comente novamente a string de conexão, para que ela não sobrescreva a string de conexão que está no appsettings.
 
-![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/46a50212-1dfc-488b-a64f-2f247568b817)
+![image_d](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/03a1d708-9fe1-4e14-82a7-22a5dd5e176e)
 
 
 ## Hospedagem gratuita (Asp.Net Core / SQL Server)
@@ -137,7 +136,7 @@ E-mail: carlosrogerio.info@gmail.com <br/>
 
 ## Arquitetura
 
-![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/77f55823-a70c-4b9b-99a0-5a60dc717d87)
+![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/ba4b790f-cf8f-4911-8aa8-a3baf829dca1)
 
-![image_b](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/b6005ed6-4d76-489f-9869-ea142279523d)
+![image_b](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/383812dd-1086-45bf-a53a-91c051c4d303)
 
