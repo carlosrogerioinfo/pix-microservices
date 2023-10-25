@@ -123,13 +123,10 @@ Update-Database
 Se deu tudo certo você deverá ver algo como a imagem a seguir
 ![image_d4-4](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/cd4f450e-7e94-417d-858d-2e7090b82048)
 
-Use o comando abaixo caso deseje gerar um **script de banco de dados** ao invés de criar ou aplicar as alterações diretamente no banco de dados
+Use o comando abaixo caso deseje gerar um **script de banco de dados** ao invés de criar ou aplicar as alterações diretamente no banco de dados com o comando **Update-Database**
 ```
 Script-Migration
 ```
-
-![image_c](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/29fa936e-ce49-4a1d-8a28-96ee96032f7c)
-
 
 Lembre-se de descomentar a opção do banco de dados para realizar a migration no método **OnConfiguring** no **PixDataContext**, conforme já mencionado acima na seção de configurações iniciais. Depois de executar sua migration, comente novamente a string de conexão, para que ela não sobrescreva a string de conexão que está no appsettings.
 
