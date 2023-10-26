@@ -6,7 +6,7 @@ O projeto **Pix Microservices Backend** é um exemplo de estrutura de **aplicaç
 
 Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** e **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
 
-- [ ] Ordenação (É possível realizar ordenação por todos os campos disponíveis no endpoint, através do campo SortBy, para ordenar em ordem ascendente, basta informa o nome do campo, para ordenar em ordem decrescente basta usar o sinal de "-" antes do nome do campo).
+- [ ] Ordenação (É possível realizar ordenação por todos os campos disponíveis no endpoint, através do campo SortBy)
 - [ ] Paginação (Se não for especificado page e pageSize, por padrão ele define page = 1 e pageSize = 10).
 - [ ] Filtros dinâmicos (Realiza filtragem dinâmica por qualquer campo da entidade).
 - [ ] Duas opções de conexão a banco de dados (**SQL Server** e **PostgreSQL**)
@@ -17,8 +17,9 @@ Este modelo de projeto está compatível e pronto para ser conectado com dois ti
 - [ ] Asp Net Core 7.0
 - [ ] API Gateway
 
-#### Exemplo de como ordenar pelo campo name
+#### Ordenação
 
+Para ordenar em ordem ascendente, basta informa o nome do campo, para ordenar em ordem decrescente basta usar o sinal de "-" antes do nome do campo).<br/>
 No campo SortBy, informe **name** (para ordenação ascendente) ou informe **-name** (para ordenação descendente)<br/>
 Para ordenar por vários campos, separe-os por "," (name,number).
 
