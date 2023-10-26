@@ -163,14 +163,6 @@ E-mail: carlosrogerio.info@gmail.com <br/>
 
 ![device_3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/5101c0a3-19d1-43b4-abab-6b48d9adc971)
 
-![bank_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/23fe3071-c35b-4a7a-931e-24ce3fdeabbb)
-
-![bank_2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/a21e464d-966e-4246-b2cc-fe55865da890)
-
-![bank_3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/add42b7c-888b-4e16-8367-ba3df8f3747c)
-
-![bank_4](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/5abeb3a7-f155-4fb5-a2be-2eb33722b2c8)
-
 ## Mer
 
 ![mer](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/d1255410-e50c-4b99-a853-ad07c816c1ed)
