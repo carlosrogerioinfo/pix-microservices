@@ -31,6 +31,7 @@ namespace Pix.Microservices.Domain.Http.Request
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public bool? Active { get; set; }
 
+        public string SortBy { get; set; }
     }
 
 }

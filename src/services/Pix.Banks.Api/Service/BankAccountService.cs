@@ -29,7 +29,7 @@ namespace Pix.Banks.Api.Service
 
         public async Task<PagedResponse<BankAccountResponse, PagedResult>> GetAllByFilter(PaginationFilter paginationFilter, BankAccountFilter dynamicFilter)
         {
-            var entity = await _repository.SearchPaged(dynamicFilter, paginationFilter,
+            var entity = await _repository.SearchPaged(dynamicFilter, paginationFilter, dynamicFilter.SortBy,
                                                         include => include.Bank,
                                                         include => include.Company);
 

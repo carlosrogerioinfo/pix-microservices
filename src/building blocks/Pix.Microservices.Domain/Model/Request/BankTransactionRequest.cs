@@ -43,12 +43,16 @@ namespace Pix.Microservices.Domain.Http.Request
 
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public Guid? CompanyId { get; set; }
+
+        public string SortBy { get; set; }
     }
 
     public class BankTransactionFilterRoute
     {
         public Guid? UserId { get; set; }
         public Guid? DeviceId { get; set; }
+
+        public string SortBy { get; set; }
     }
 
 }

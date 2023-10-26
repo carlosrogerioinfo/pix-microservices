@@ -34,5 +34,7 @@ namespace Pix.Microservices.Domain.Http.Request
         
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? BankTransactionId { get; set; }
+
+        public string SortBy { get; set; }
     }
 }

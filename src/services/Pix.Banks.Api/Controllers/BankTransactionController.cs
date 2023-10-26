@@ -30,7 +30,13 @@ namespace Pix.Banks.Api.Controllers
         [ProducesResponseType(typeof(ResponseError), StatusCodes.Status412PreconditionFailed)]
         public async Task<IActionResult> GetAllByFilter([FromQuery] PaginationFilter paginationFilter, [FromQuery] BankTransactionFilterRoute filter, [FromRoute] Guid companyid)
         {
-            var data = await _service.GetAllByFilter(paginationFilter, new BankTransactionFilter { CompanyId = companyid, DeviceId = filter.DeviceId, UserId = filter.UserId });
+            var data = await _service.GetAllByFilter(paginationFilter, new BankTransactionFilter 
+            { 
+                CompanyId = companyid, 
+                DeviceId = filter.DeviceId, 
+                UserId = filter.UserId,
+                SortBy = filter.SortBy
+            });
 
             if (_service.Notifications.Any()) return BadRequest(BaseErrorResponse.Create(_service.Notifications));
 

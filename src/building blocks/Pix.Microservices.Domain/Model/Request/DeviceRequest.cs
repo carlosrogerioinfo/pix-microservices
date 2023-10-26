@@ -44,5 +44,7 @@ namespace Pix.Microservices.Domain.Http.Request
 
         [QueryOperator(Operator = WhereOperator.Equals)]
         public Guid? CompanyId { get; set; }
+
+        public string SortBy { get; set; }
     }
 }

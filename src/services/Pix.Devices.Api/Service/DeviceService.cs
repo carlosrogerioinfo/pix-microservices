@@ -29,7 +29,7 @@ namespace Pix.Devices.Api.Service
 
         public async Task<PagedResponse<DeviceResponse, PagedResult>> GetAllByFilter(PaginationFilter paginationFilter, DeviceFilter dynamicFilter)
         {
-            var entity = await _repository.SearchPaged(dynamicFilter, paginationFilter, include => include.Company);
+            var entity = await _repository.SearchPaged(dynamicFilter, paginationFilter, dynamicFilter.SortBy, include => include.Company);
             
             if (entity.Data.Count() <= 0) AddNotification("Alert", "Nenhum registro encontrado");
 

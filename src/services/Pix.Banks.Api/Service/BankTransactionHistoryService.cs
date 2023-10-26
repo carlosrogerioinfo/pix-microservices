@@ -29,7 +29,7 @@ namespace Pix.Banks.Api.Service
 
         public async Task<PagedResponse<BankTransactionHistoryResponse, PagedResult>> GetAllByFilter(PaginationFilter paginationFilter, BankTransactionHistoryFilter dynamicFilter)
         {
-            var entity = await _repository.SearchPaged(dynamicFilter, paginationFilter, 
+            var entity = await _repository.SearchPaged(dynamicFilter, paginationFilter, dynamicFilter.SortBy,
                                                         include => include.BankTransaction);
 
             if (entity.Data.Count() <= 0) AddNotification("Alert", "Nenhum registro encontrado");
