@@ -20,8 +20,7 @@ Este modelo de projeto está compatível e pronto para ser conectado com dois ti
 #### Ordenação
 
 Para ordenar em ordem ascendente, basta informa o nome do campo, para ordenar em ordem decrescente basta usar o sinal de "-" antes do nome do campo).<br/>
-No campo SortBy, informe **name** (para ordenação ascendente) ou informe **-name** (para ordenação descendente)<br/>
-Para ordenar por vários campos, separe-os por "," (name,number).
+No campo SortBy, informe **name** (para ordenação ascendente) ou informe **-name** (para ordenação descendente). Para ordenar por vários campos, separe-os por "," (name,number).
 
 ## Arquitetura
 ![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/ba4b790f-cf8f-4911-8aa8-a3baf829dca1)
