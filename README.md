@@ -110,18 +110,18 @@ Para criarmos o banco de dados pela primeira vez, ou para alterarmos o banco de 
 ```
 Add-Migration start-database
 ```
-![image_d1-1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/659806d6-828c-4d25-b847-91f59f9e1f5f)
+![image_d1-1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/85eb5169-ec84-4ac6-b400-87322a40d5ff)
 
 Se deu tudo certo você deverá ver algo como a imagem a seguir
-![image_d2-2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/ddbe8743-8e32-450e-b814-3e607e9713b4)
+![image_d2-2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/8f6bad81-e313-4e18-bb2e-834048f9821d)
 
 ```
 Update-Database
 ```
-![image_d3-3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/168c6736-f71f-44ff-913c-e493a41d5f24)
+![image_d3-3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/f4e2dd7b-cc5c-416a-8e9c-ca31060b0000)
 
 Se deu tudo certo você deverá ver algo como a imagem a seguir
-![image_d4-4](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/cd4f450e-7e94-417d-858d-2e7090b82048)
+![image_d4-4](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/b2f2a667-fd54-4dd5-997c-bf383c54afe0)
 
 Use o comando abaixo caso deseje gerar um **script de banco de dados** ao invés de criar ou aplicar as alterações diretamente no banco de dados com o comando **Update-Database**
 ```
