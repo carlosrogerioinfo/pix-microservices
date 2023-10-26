@@ -8,7 +8,10 @@ namespace Pix.Companies.Api.Configurations
         public static IServiceCollection AddWebApiConfiguration(this IServiceCollection services)
         {
             services.AddControllers()
-            .AddJsonOptions(options => { options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles; });
+                .AddJsonOptions(options => {
+                    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+                    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+                });
 
             return services;
         }
