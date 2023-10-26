@@ -1,11 +1,8 @@
-﻿using AspNetCore.IQueryable.Extensions.Attributes;
+﻿using AspNetCore.IQueryable.Extensions;
+using AspNetCore.IQueryable.Extensions.Attributes;
 using AspNetCore.IQueryable.Extensions.Filter;
-using AspNetCore.IQueryable.Extensions;
-using Pix.Microservices.Domain.Entities;
-using Pix.Microservices.Domain.Enums;
 using Pix.Core.Lib.Commands;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using Pix.Microservices.Domain.Enums;
 
 namespace Pix.Microservices.Domain.Http.Request
 {
