@@ -22,7 +22,7 @@ namespace Pix.Microservices.Domain.Http.Request
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public Guid? Id { get; set; }
 
-        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+        [QueryOperator(Operator = WhereOperator.Contains, CaseSensitive = false)]
         public string Name { get; set; }
 
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]

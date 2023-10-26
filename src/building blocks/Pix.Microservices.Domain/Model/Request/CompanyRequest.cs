@@ -25,11 +25,11 @@ namespace Pix.Microservices.Domain.Http.Request
     {
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public Guid? Id { get; set; }
-        
-        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+
+        [QueryOperator(Operator = WhereOperator.Contains, CaseSensitive = false)]
         public string CompanyName { get; set; }
-        
-        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+
+        [QueryOperator(Operator = WhereOperator.Contains, CaseSensitive = false)]
         public string TradingName { get; set; }
         
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
@@ -40,8 +40,8 @@ namespace Pix.Microservices.Domain.Http.Request
         
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
         public string PhoneNumber { get; set; }
-        
-        [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
+
+        [QueryOperator(Operator = WhereOperator.Contains, CaseSensitive = false)]
         public string Contact { get; set; }
         
         [QueryOperator(Operator = WhereOperator.Equals, UseOr = false)]
