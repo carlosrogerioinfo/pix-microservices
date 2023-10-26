@@ -157,9 +157,11 @@ E-mail: carlosrogerio.info@gmail.com <br/>
 
 ## Swagger
 
-![device_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/9baf0518-c507-4172-b6b4-cd324c211da5)
+![device_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/e8f15930-2f8f-4473-a24f-d3fed89b420d)
 
-![device_2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/8d4089ba-5362-4679-a1f6-07860e07e1d9)
+![device_2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/200085a5-2598-4bd0-bbe1-111d3f1775f4)
+
+![device_3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/5101c0a3-19d1-43b4-abab-6b48d9adc971)
 
 ![bank_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/23fe3071-c35b-4a7a-931e-24ce3fdeabbb)
 
