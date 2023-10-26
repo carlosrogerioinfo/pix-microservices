@@ -163,3 +163,7 @@ E-mail: carlosrogerio.info@gmail.com <br/>
 ![bank_3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/add42b7c-888b-4e16-8367-ba3df8f3747c)
 
 ![bank_4](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/5abeb3a7-f155-4fb5-a2be-2eb33722b2c8)
+
+## Mer
+
+![mer](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/d1255410-e50c-4b99-a853-ad07c816c1ed)
