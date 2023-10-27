@@ -5,7 +5,7 @@ using Pix.Core.Lib.Response;
 using Pix.Gateway.Api.Service;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Core.Repository.Domain.Model;
+using Core.Integration.Domain.Model;
 using System.ComponentModel.DataAnnotations;
 
 namespace Pix.Gateway.Api.Controllers

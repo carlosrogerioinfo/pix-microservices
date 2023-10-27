@@ -4,7 +4,7 @@ using Pix.Core.Lib.Commands;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Core.Repository.Domain.Model;
+using Core.Integration.Domain.Model;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Transactions;
 

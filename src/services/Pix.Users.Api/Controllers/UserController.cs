@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Core.Repository.Domain.Model;
+using Core.Integration.Domain.Model;
 using Pix.Core.Lib.Controller;
 using Pix.Core.Lib.Response;
 using Pix.Users.Api.Service;

@@ -1,4 +1,4 @@
-﻿using Core.Repository.Infrastructure.Repository.Base;
+﻿using Core.Integration.Infrastructure.Repository.Base;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Contexts;
