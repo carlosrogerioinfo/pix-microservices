@@ -4,7 +4,7 @@
 
 O projeto **Pix Microservices Backend** é um exemplo de estrutura de **aplicação distribuída** com utilização de **API**, **Gateways** para isolamento das APIs, possui uma implementação funcional do conceito do uso de **CRQS** (Command Query Responsibility Segregation), uso de **VO** (Value Objects) e uso de **Notification Pattern** e muito mais, este projeto tem a intenção de servir de modelo para desenvolvedores tanto iniciantes quanto avançados que desejam desenvolver um projeto corporativos de backend robusto com padrões de projetos bem definidos.
 
-Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** e **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
+Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** ou **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
 
 - [ ] Ordenação (É possível realizar ordenação por todos os campos disponíveis no endpoint, através do campo SortBy)
 - [ ] Paginação (Se não for especificado page e pageSize, por padrão ele define page = 1 e pageSize = 10).
