@@ -2,12 +2,12 @@
 
 ## Sobre o projeto
 
-O projeto **Pix Microservices Backend** é um exemplo de estrutura de **aplicação distribuída** com utilização de **API**, **Gateways** para isolamento das APIs, possui uma implementação funcional do conceito do uso de **CRQS** (Command Query Responsibility Segregation), uso de **VO** (Value Objects) e uso de **Notification Pattern** e muito mais, este projeto tem a intenção de servir de modelo para desenvolvedores tanto iniciantes quanto avançados que desejem desenvolver um projeto corporativos de backend robusto com padrões de projetos bem definidos.
+O projeto **Pix Microservices Backend** é um exemplo de estrutura de **aplicação distribuída** com utilização de **API**, **Gateways** para isolamento das APIs, possui uma implementação funcional do conceito do uso de **CRQS** (Command Query Responsibility Segregation), uso de **VO** (Value Objects) e uso de **Notification Pattern** e muito mais, este projeto tem a intenção de servir de modelo para desenvolvedores tanto iniciantes quanto avançados que desejam desenvolver um projeto corporativos de backend robusto com padrões de projetos bem definidos.
 
-Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** e **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
+Este modelo de projeto está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** ou **PostgreSQL**. Tem diversas características e recursos importantes como por exemplo:
 
-- [ ] Ordenação (É possível realizar ordenação por todos os campos disponíveis no endpoint, através do campo SortBy, para ordenar em ordem ascendente, basta informa o nome do campo, para ordenar em ordem decrescente basta usar o sinal de "-" antes do nome do campo).
 - [ ] Paginação (Se não for especificado page e pageSize, por padrão ele define page = 1 e pageSize = 10).
+- [ ] Ordenação (É possível realizar ordenação por todos os campos disponíveis no endpoint)
 - [ ] Filtros dinâmicos (Realiza filtragem dinâmica por qualquer campo da entidade).
 - [ ] Duas opções de conexão a banco de dados (**SQL Server** e **PostgreSQL**)
 - [ ] Repositório genérico avançado (Para maximizar a produtividade)
@@ -17,10 +17,9 @@ Este modelo de projeto está compatível e pronto para ser conectado com dois ti
 - [ ] Asp Net Core 7.0
 - [ ] API Gateway
 
-#### Exemplo de como ordenar pelo campo name
+#### Ordenação
 
-No campo SortBy, informe **name** (para ordenação ascendente) ou informe **-name** (para ordenação descendente)<br/>
-Para ordenar por vários campos, separe-os por "," (name,number).
+Para ordenar em ordem ascendente, basta informa o nome do campo, para ordenar em ordem decrescente basta usar o sinal de "-" antes do nome do campo). No campo **SortBy**, informe **name** (para ordenação ascendente) ou informe **-name** (para ordenação descendente). Para ordenar por vários campos, separe-os por "," (name,number).
 
 ## Arquitetura
 ![image_a](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/ba4b790f-cf8f-4911-8aa8-a3baf829dca1)
@@ -157,17 +156,11 @@ E-mail: carlosrogerio.info@gmail.com <br/>
 
 ## Swagger
 
-![device_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/9baf0518-c507-4172-b6b4-cd324c211da5)
+![device_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/e8f15930-2f8f-4473-a24f-d3fed89b420d)
 
-![device_2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/8d4089ba-5362-4679-a1f6-07860e07e1d9)
+![device_2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/200085a5-2598-4bd0-bbe1-111d3f1775f4)
 
-![bank_1](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/23fe3071-c35b-4a7a-931e-24ce3fdeabbb)
-
-![bank_2](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/a21e464d-966e-4246-b2cc-fe55865da890)
-
-![bank_3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/add42b7c-888b-4e16-8367-ba3df8f3747c)
-
-![bank_4](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/5abeb3a7-f155-4fb5-a2be-2eb33722b2c8)
+![device_3](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/5101c0a3-19d1-43b4-abab-6b48d9adc971)
 
 ## Mer
 
