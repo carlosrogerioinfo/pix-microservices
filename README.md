@@ -38,7 +38,7 @@ Este modelo de projeto baseado no conceito de microsserviços está compatível 
 
 ### Copiando a Dll respectiva para o banco de dados que você irá usar
 
-![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/6f4c95a7-8aec-43bd-a535-1bb9dae12731)
+![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/aee840b7-e2b9-4e44-bb07-09358eba1a1c)
 
 **Link para download da dll**: https://drive.google.com/drive/folders/1-WcOBdoiQfouqLskjQgdIdzCIITiHIGj?usp=drive_link
 
