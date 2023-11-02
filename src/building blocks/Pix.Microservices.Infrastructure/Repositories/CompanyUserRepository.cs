@@ -15,7 +15,7 @@ namespace Pix.Microservices.Infrastructure.Repositories
 
         }
 
-        public async Task<PagedResponse<CompanyUser, PagedResult>> GetAllAsync(PaginationFilter paginationFilter)
+        new public async Task<PagedResponse<CompanyUser, PagedResult>> GetAllAsync(PaginationFilter paginationFilter)
         {
             var queryable = await _dbSet.GetPagedAsync(paginationFilter.Page, paginationFilter.PageSize);
 
