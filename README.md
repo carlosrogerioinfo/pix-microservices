@@ -29,18 +29,11 @@ Para ordenar em ordem ascendente, basta informa o nome do campo, para ordenar em
 
 Este modelo de projeto baseado no conceito de microsserviços está compatível e pronto para ser conectado com dois tipos de bancos de dados, **SQL Server** e **PostgreSQL**. Para isso é necessário que algumas configurações iniciais e ações sejam realizadas. São elas:
 
-- [ ] Copiar a Dll Core.Integration.Base para a pasta **building blocks dlls**, pois tem uma Dll para **SQL Server** e outra para **Postgre SQL**.
 - [ ] Setar o valor da chave **UseSqlServer** para **true**, caso use o banco de dados **SQL Server**.
 - [ ] Setar o valor da chave **UseSqlServer** para **false**, caso use o banco de dados **PostgreSQL**.
 - [ ] Informar o valor da connection strings na chave **DatabaseConnection**.
 - [ ] Alterar as constantes de tipos de dados
 - [ ] Descomentar a opção do banco de dados para realizar a migration no método **OnConfiguring** no **PixDataContext**.
-
-### Copiando a Dll respectiva para o banco de dados que você irá usar
-
-![image](https://github.com/carlosrogerioinfo/pix-microservices/assets/72615280/aee840b7-e2b9-4e44-bb07-09358eba1a1c)
-
-**Link para download da dll**: https://drive.google.com/drive/folders/1-WcOBdoiQfouqLskjQgdIdzCIITiHIGj?usp=drive_link
 
 
 ### Configurando o arquivo appsettings
