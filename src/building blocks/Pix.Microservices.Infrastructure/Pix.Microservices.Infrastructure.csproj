@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AspNetCore.IQueryable.Extensions" Version="7.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.13" />
@@ -23,15 +29,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Core.Integration.Base">
-      <HintPath>..\..\building blocks dlls\Core.Integration.Base.dll</HintPath>
+    <Reference Include="Esterdigi.Api.Core">
+      <HintPath>..\..\building blocks dlls\Esterdigi.Api.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Pix.Core.Lib">
-      <HintPath>..\..\building blocks dlls\Pix.Core.Lib.dll</HintPath>
+    <Reference Include="Esterdigi.Api.Core.Database">
+      <HintPath>..\..\building blocks dlls\Esterdigi.Api.Core.Database.dll</HintPath>
     </Reference>
   </ItemGroup>
 

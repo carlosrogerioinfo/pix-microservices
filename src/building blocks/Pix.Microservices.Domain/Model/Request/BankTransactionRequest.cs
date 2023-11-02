@@ -1,7 +1,7 @@
 ﻿using AspNetCore.IQueryable.Extensions;
 using AspNetCore.IQueryable.Extensions.Attributes;
 using AspNetCore.IQueryable.Extensions.Filter;
-using Pix.Core.Lib.Commands;
+using Esterdigi.Api.Core.Commands;
 using Pix.Microservices.Domain.Enums;
 
 namespace Pix.Microservices.Domain.Http.Request

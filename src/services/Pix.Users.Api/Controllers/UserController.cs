@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Core.Integration.Domain.Model;
-using Pix.Core.Lib.Controller;
-using Pix.Core.Lib.Response;
+using Esterdigi.Api.Core.Database.Domain.Model;
+using Esterdigi.Api.Core.Controller;
+using Esterdigi.Api.Core.Response;
 using Pix.Users.Api.Service;
 using System.ComponentModel.DataAnnotations;
 

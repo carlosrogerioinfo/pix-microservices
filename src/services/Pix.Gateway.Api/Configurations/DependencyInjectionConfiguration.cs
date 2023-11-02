@@ -1,7 +1,8 @@
 ﻿using Pix.Gateway.Api.Service;
 using Polly;
-using Pix.Core.Lib.Extensions;
+using Esterdigi.Api.Core.Extensions;
 using System.Net.Http.Headers;
+using Esterdigi.Api.Core.Extensions;
 
 namespace Pix.Gateway.Api.Configurations
 {

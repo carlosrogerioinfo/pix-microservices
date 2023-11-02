@@ -1,6 +1,6 @@
 ﻿using FluentValidator;
 using Pix.Microservices.Domain.Enums;
-using Pix.Core.Lib.Entities;
+using Esterdigi.Api.Core.Database.Domain.Entities;
 
 namespace Pix.Microservices.Domain.Entities
 {

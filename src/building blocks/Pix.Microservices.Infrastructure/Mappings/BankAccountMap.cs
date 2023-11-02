@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Pix.Microservices.Domain.Entities;
-using Pix.Core.Lib.Constants;
+using Esterdigi.Api.Core.Constants;
 
 namespace Pix.Microservices.Infrastructure.Mappings
 {

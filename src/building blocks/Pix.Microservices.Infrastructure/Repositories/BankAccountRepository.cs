@@ -1,4 +1,4 @@
-﻿using Core.Integration.Infrastructure.Repository.Base;
+﻿using Esterdigi.Api.Core.Database.Infrastructure.Repository.Base;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Contexts;

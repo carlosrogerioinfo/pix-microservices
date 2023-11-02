@@ -1,4 +1,4 @@
-﻿using Pix.Core.Lib.Commands;
+﻿using Esterdigi.Api.Core.Commands;
 using System.ComponentModel.DataAnnotations;
 
 namespace Pix.Microservices.Domain.Http.Request

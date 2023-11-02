@@ -3,10 +3,10 @@ using FluentValidator;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Core.Integration.Domain.Model;
+using Esterdigi.Api.Core.Database.Domain.Model;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Transactions;
-using Pix.Core.Lib.Commands;
+using Esterdigi.Api.Core.Commands;
 
 namespace Pix.Companies.Api.Service
 {

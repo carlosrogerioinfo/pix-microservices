@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Http.Response;
-using Pix.Core.Lib.Extensions;
+using Esterdigi.Api.Core.Extensions;
+using Esterdigi.Api.Core.Extensions;
 
 namespace Pix.Microservices.Domain.Profiles
 {

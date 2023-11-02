@@ -1,11 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Esterdigi.Api.Core.Database.Domain.Extention;
+using Esterdigi.Api.Core.Database.Domain.Model;
+using Esterdigi.Api.Core.Database.Infrastructure.Repository.Base;
+using Microsoft.EntityFrameworkCore;
 using Pix.Microservices.Domain.Entities;
-using Core.Integration.Domain.Extention;
-using Core.Integration.Domain.Model;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Contexts;
-using Core.Integration.Infrastructure.Repository.Base;
-using Core.Integration.Domain.Extention;
 
 namespace Pix.Microservices.Infrastructure.Repositories
 {

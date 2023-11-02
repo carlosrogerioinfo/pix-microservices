@@ -1,8 +1,8 @@
-﻿using Pix.Core.Lib.Extensions;
-using Pix.Core.Lib.Gateway;
+﻿using Esterdigi.Api.Core.Extensions;
+using Esterdigi.Api.Core.Gateway;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
-using Core.Integration.Domain.Model;
+using Esterdigi.Api.Core.Database.Domain.Model;
 
 namespace Pix.Gateway.Api.Service
 {
