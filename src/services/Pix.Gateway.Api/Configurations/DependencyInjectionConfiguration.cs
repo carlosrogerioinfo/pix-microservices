@@ -1,8 +1,5 @@
-﻿using Pix.Gateway.Api.Service;
-using Polly;
-using Esterdigi.Api.Core.Extensions;
+using Pix.Gateway.Api.Service;
 using System.Net.Http.Headers;
-using Esterdigi.Api.Core.Extensions;
 
 namespace Pix.Gateway.Api.Configurations
 {
@@ -20,32 +17,32 @@ namespace Pix.Gateway.Api.Configurations
                 config.BaseAddress = new Uri(configuration.GetSection(baseUrl)["PixSevenBackofficeApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             })
-            .AddPolicyHandler(PollyExtensions.WaitAndRetry())
-            .AddTransientHttpErrorPolicy(x => x.CircuitBreakerAsync(tryAlowedBeforeBreak, TimeSpan.FromSeconds(durationOfBreak)));
+            .AddPolicyHandler(PollyConfiguration.GetRetryPolicy())
+            .AddPolicyHandler(PollyConfiguration.GetCircuitBreakerPolicy(tryAlowedBeforeBreak, (int)durationOfBreak));
 
             services.AddHttpClient<BankAccountService>(config =>
             {
                 config.BaseAddress = new Uri(configuration.GetSection(baseUrl)["PixSevenBackofficeApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             })
-            .AddPolicyHandler(PollyExtensions.WaitAndRetry())
-            .AddTransientHttpErrorPolicy(x => x.CircuitBreakerAsync(tryAlowedBeforeBreak, TimeSpan.FromSeconds(durationOfBreak)));
+            .AddPolicyHandler(PollyConfiguration.GetRetryPolicy())
+            .AddPolicyHandler(PollyConfiguration.GetCircuitBreakerPolicy(tryAlowedBeforeBreak, (int)durationOfBreak));
 
             services.AddHttpClient<CompanyService>(config =>
             {
                 config.BaseAddress = new Uri(configuration.GetSection(baseUrl)["PixSevenBackofficeApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             })
-            .AddPolicyHandler(PollyExtensions.WaitAndRetry())
-            .AddTransientHttpErrorPolicy(x => x.CircuitBreakerAsync(tryAlowedBeforeBreak, TimeSpan.FromSeconds(durationOfBreak)));
+            .AddPolicyHandler(PollyConfiguration.GetRetryPolicy())
+            .AddPolicyHandler(PollyConfiguration.GetCircuitBreakerPolicy(tryAlowedBeforeBreak, (int)durationOfBreak));
 
             services.AddHttpClient<UserService>(config =>
             {
                 config.BaseAddress = new Uri(configuration.GetSection(baseUrl)["PixSevenBackofficeApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             })
-            .AddPolicyHandler(PollyExtensions.WaitAndRetry())
-            .AddTransientHttpErrorPolicy(x => x.CircuitBreakerAsync(tryAlowedBeforeBreak, TimeSpan.FromSeconds(durationOfBreak)));
+            .AddPolicyHandler(PollyConfiguration.GetRetryPolicy())
+            .AddPolicyHandler(PollyConfiguration.GetCircuitBreakerPolicy(tryAlowedBeforeBreak, (int)durationOfBreak));
 
             return services;
         }

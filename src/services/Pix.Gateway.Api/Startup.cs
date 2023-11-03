@@ -1,4 +1,10 @@
-﻿using Pix.Gateway.Api.Configurations;
+using Pix.Gateway.Api.Configurations;
+using Pix.Microservices.Core.Extensions;
+using Pix.Microservices.Core.HealthChecks;
+using Pix.Microservices.Core.Middleware;
+using Pix.Microservices.Core.Versioning;
+using Serilog;
+using System.Reflection;
 
 namespace Pix.Gateway.Api
 {
@@ -19,16 +25,32 @@ namespace Pix.Gateway.Api
 
             services.AddDependencyInjectionConfiguration(Configuration);
 
-            //services.AddJWTBearerConfiguration(Configuration.GetSection(nameof(JwtSettings)).Get<JwtSettings>());
+            services.AddApiVersioningConfiguration();
+
+            services.AddMediatRConfiguration(Assembly.GetExecutingAssembly());
+
+            services.AddHealthChecks();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
 
-            //app.UseJWTBearerConfiguration();
+            app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
+
+            app.UseSerilogRequestLogging(options =>
+            {
+                options.GetLevel = (ctx, elapsed, ex) =>
+                {
+                    if (ex != null || ctx.Response.StatusCode >= 500) return Serilog.Events.LogEventLevel.Error;
+                    if (elapsed > 3000) return Serilog.Events.LogEventLevel.Warning;
+                    return Serilog.Events.LogEventLevel.Information;
+                };
+            });
 
             app.UseWebApiConfiguration(true);
+
+            app.UseHealthCheckConfiguration();
 
             app.UseSwaggerConfiguration(env);
         }
