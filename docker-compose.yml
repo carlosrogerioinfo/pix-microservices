@@ -1,0 +1,112 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Pix@Str0ng!Pass
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Pix@Str0ng!Pass' -Q 'SELECT 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - pix-network
+
+  pix-banks-api:
+    build:
+      context: .
+      dockerfile: src/services/Pix.Banks.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DATABASE_CONNECTION=Server=sqlserver;Database=PixDb;User Id=SA;Password=Pix@Str0ng!Pass;TrustServerCertificate=True
+      - JWT_SECRET_KEY=Pix@SuperSecretJwtKey2024!ForDevelopment
+      - UseSqlServer=true
+    ports:
+      - "5001:80"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - pix-network
+
+  pix-companies-api:
+    build:
+      context: .
+      dockerfile: src/services/Pix.Companies.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DATABASE_CONNECTION=Server=sqlserver;Database=PixDb;User Id=SA;Password=Pix@Str0ng!Pass;TrustServerCertificate=True
+      - JWT_SECRET_KEY=Pix@SuperSecretJwtKey2024!ForDevelopment
+      - UseSqlServer=true
+    ports:
+      - "5002:80"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - pix-network
+
+  pix-devices-api:
+    build:
+      context: .
+      dockerfile: src/services/Pix.Devices.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DATABASE_CONNECTION=Server=sqlserver;Database=PixDb;User Id=SA;Password=Pix@Str0ng!Pass;TrustServerCertificate=True
+      - JWT_SECRET_KEY=Pix@SuperSecretJwtKey2024!ForDevelopment
+      - UseSqlServer=true
+    ports:
+      - "5003:80"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - pix-network
+
+  pix-users-api:
+    build:
+      context: .
+      dockerfile: src/services/Pix.Users.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DATABASE_CONNECTION=Server=sqlserver;Database=PixDb;User Id=SA;Password=Pix@Str0ng!Pass;TrustServerCertificate=True
+      - JWT_SECRET_KEY=Pix@SuperSecretJwtKey2024!ForDevelopment
+      - UseSqlServer=true
+    ports:
+      - "5004:80"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - pix-network
+
+  pix-gateway-api:
+    build:
+      context: .
+      dockerfile: src/services/Pix.Gateway.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - JWT_SECRET_KEY=Pix@SuperSecretJwtKey2024!ForDevelopment
+    ports:
+      - "5000:80"
+    depends_on:
+      - pix-banks-api
+      - pix-companies-api
+      - pix-devices-api
+      - pix-users-api
+    networks:
+      - pix-network
+
+volumes:
+  sqlserver-data:
+
+networks:
+  pix-network:
+    driver: bridge
