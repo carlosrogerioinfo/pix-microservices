@@ -28,6 +28,12 @@ namespace Pix.Microservices.Domain.Entities
         public string Name { get; private set; }
         public string Email { get; private set; }
         public UserType UserType { get; private set; }
+        public string PasswordHash { get; private set; } = string.Empty;
+
+        public void SetPasswordHash(string hash)
+        {
+            PasswordHash = hash;
+        }
 
         public IEnumerable<BankTransaction> BankTransactions { get; } = new List<BankTransaction>();
         public IEnumerable<DeviceUser> DeviceUsers { get; } = new List<DeviceUser>();
