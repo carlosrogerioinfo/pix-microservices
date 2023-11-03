@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using FluentValidator;
+using Pix.Microservices.Core.Security;
 using Pix.Microservices.Domain.Entities;
 using Pix.Microservices.Domain.Http.Request;
 using Pix.Microservices.Domain.Http.Response;
@@ -7,7 +8,6 @@ using Esterdigi.Api.Core.Database.Domain.Model;
 using Pix.Microservices.Domain.Repositories;
 using Pix.Microservices.Infrastructure.Transactions;
 using Esterdigi.Api.Core.Commands;
-using Esterdigi.Api.Core.Helpers.Encrypt;
 
 namespace Pix.Users.Api.Service
 {
@@ -29,9 +29,17 @@ namespace Pix.Users.Api.Service
 
         public async Task<UserResponse> Handle(AuthenticationRequest request)
         {
-            var entity = await _repository.LoginAsync(request.Email, Cryptography.EncryptPassword(request.Password));
+            var entity = await _repository.LoginAsync(request.Email);
 
             if (entity is null)
+            {
+                AddNotification("Warning", "Usuário ou senha inválidos");
+                return default;
+            }
+
+            // If user has no password hash yet (legacy), accept login; otherwise verify
+            if (!string.IsNullOrEmpty(entity.PasswordHash) &&
+                !PasswordHasher.VerifyPassword(request.Password, entity.PasswordHash))
             {
                 AddNotification("Warning", "Usuário ou senha inválidos");
                 return default;
@@ -69,6 +77,9 @@ namespace Pix.Users.Api.Service
             await ValidateInsert(request);
 
             var entity = new User(default, request.Name, request.Email, request.UserType);
+
+            if (!string.IsNullOrWhiteSpace(request.Password))
+                entity.SetPasswordHash(PasswordHasher.HashPassword(request.Password));
 
             AddNotifications(entity.Notifications);
 
