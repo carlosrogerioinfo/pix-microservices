@@ -28,11 +28,11 @@ namespace Pix.Microservices.Infrastructure.Repositories
             return new PagedResponse<User, PagedResult>(entity, queryable);
         }
 
-        public async Task<User> LoginAsync(string email, string password)
+        public async Task<User> LoginAsync(string email, CancellationToken cancellationToken = default)
         {
             return await _dbSet
                 .AsNoTrackingWithIdentityResolution()
-                .FirstOrDefaultAsync(x => x.Email == email);
+                .FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
         }
 
     }
